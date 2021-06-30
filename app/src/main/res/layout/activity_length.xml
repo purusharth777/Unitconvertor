@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Length">
+
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="24dp"
+        android:hint="Ans will be here"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/input" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Enter the numbers"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/input"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/input"
+        app:layout_constraintTop_toBottomOf="@+id/output">
+
+        <Button
+            android:id="@+id/button27"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:onClick="gajtom"
+            android:text="SQGaj to SQ m" />
+
+        <Button
+            android:id="@+id/kgtog2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="kgtog"
+            android:padding="10sp"
+            android:text="km to m"
+            app:layout_constraintBaseline_toBaselineOf="@+id/button9"
+            app:layout_constraintEnd_toStartOf="@+id/button9"
+            app:layout_constraintHorizontal_bias="0.625"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="gtokg"
+            android:padding="10sp"
+            android:text="m to km"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="microtog"
+            android:padding="10sp"
+            android:text="micro to m"
+            tools:layout_editor_absoluteX="29dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:onClick="millitog"
+            android:padding="10sp"
+            android:text="Milli to M" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gtomicro"
+            android:padding="10sp"
+            android:text="m to microM"
+            android:textAllCaps="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginRight="34dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output">
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="nanotog"
+            android:padding="10sp"
+            android:text="nano to g"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="197dp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gtopico"
+            android:padding="10sp"
+            android:text="m to picoM"
+            tools:layout_editor_absoluteX="272dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gtonano"
+            android:padding="10sp"
+            android:text="M to nanoM"
+            tools:layout_editor_absoluteX="275dp"
+            tools:layout_editor_absoluteY="340dp" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="gtomili"
+            android:padding="10sp"
+            android:text="g to mm"
+            tools:layout_editor_absoluteX="161dp"
+            tools:layout_editor_absoluteY="270dp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="microtog"
+            android:padding="10sp"
+            android:text="micro to m" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="gtokg"
+            android:padding="10sp"
+            android:text="m to km" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/kgtog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:onClick="kgtog"
+        android:padding="10sp"
+        android:text="km to m"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
